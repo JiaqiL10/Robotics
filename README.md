@@ -92,5 +92,5 @@ To re-run our `Cluedo.py`, use the same commands again, as above:
 
 ```
 chmod u+x $HOME/catkin_ws/src/lab5/src/Group4.py
-rosrun lab5 Group4.py
+rosrun lab5 Cluedo.py
 ```
