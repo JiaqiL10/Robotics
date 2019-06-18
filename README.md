@@ -1,6 +1,5 @@
-# Robotic Cluedo - Group 4 Project
+# Robotic Cluedo
 #### YouTube link: <https://youtu.be/6qkZqz-cvWg>
-#### Git clone for ssh: git@gitlab.com:comp3631/group4.git
 
 The following is a final year project with aim of making a robot (in this case a Turtlebot) play a version of the board game, Cluedo. In our version, the robot has to search the environment (a room) trying to find the murderer and the weapon of the crime.
 
@@ -20,7 +19,7 @@ I have written this README with the following assumptions:
 ### Run Gazebo
 ```
 cd catkin_ws/
-export TURTLEBOT_GAZEBO_WORLD_FILE=$HOME/catkin_ws/src/lab5/src/lab5.world
+export TURTLEBOT_GAZEBO_WORLD_FILE=Cluedo.world
 roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
 ### Load the map
@@ -39,7 +38,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch
 cd $HOME/catkin_ws/src/lab5/launch
 roslaunch ar_tracking.launch
 ```
-## Executing Group4.py
+## Executing Cluedo.py
 If you have followed the commands so far, you will also need to let the robot know where it is in the map. To do this, there are two options:
 
 1. Briefly run, then exit `turtlebot_teleop `
@@ -60,8 +59,8 @@ rostopic echo ar_pose_marker
 Then finally, you are able to run our Group4.py file with these commands:
 
 ```
-chmod u+x $HOME/catkin_ws/src/lab5/src/Group4.py
-rosrun lab5 Group4.py
+chmod u+x $HOME/catkin_ws/src/lab5/src/Cluedo.py
+rosrun  Cluedo.py
 ```
 
 
@@ -89,7 +88,7 @@ rosrun lab5 goal_points.py
 ```
 This will change the points.csv file, located at `/catkin_ws/src/lab5/`.
 
-To re-run our `Group4.py`, use the same commands again, as above:
+To re-run our `Cluedo.py`, use the same commands again, as above:
 
 ```
 chmod u+x $HOME/catkin_ws/src/lab5/src/Group4.py
